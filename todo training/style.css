@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "cont";
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 10px;
+  grid-area: cont;
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  height: 500px;
+  width: 500px;
+  justify-items: center;
+  align-items: center;
+}
+
+.cont {
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 50px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+button {
+  height: 50px;
+  width: 90px;
+}
+
+ul {
+  margin-top: 10px;
+  min-height: 435px;
+  width: 400px;
+  background-color: black;
+  overflow-y: auto;
+  list-style: none;
+}
+
+li {
+  background-color: white;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+#active {
+  height: 20px;
+  width: 166px;
+}
+
+#all {
+  height: 20px;
+  width: 168px;
+}
+
+#complete {
+  height: 20px;
+  width: 166px;
+}
+
+.item {
+  display: flex;
+}
+
+.text {
+  width: 100%;
+}
+
+.contbtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.complete {
+  height: 30px;
+  width: 30px;
+}
+
+.buttons {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 20px;
+}
+
+.editbtn {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  background: url('pen.jfif') center center/cover;
+}
+
+.editbtn:hover{
+  border: 3px solid green;
+}
+
+.delbtn {
+  height: 30px;
+  width: 30px;
+  background: url('trash.jpg') center center/cover;
+}
+
+.delbtn:hover{
+  border: 3px dotted red;
+}
+
+.over {
+  background-color: aquamarine;
+}
+
+.not {
+  display: none !important;
+}
